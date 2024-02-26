@@ -1,4 +1,5 @@
-// roomregister.style.js
+// roomregister.style.ts
+
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
@@ -11,24 +12,29 @@ export const StyledContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
-export const Container = styled.div`
-  height: 620px;
-  width: 641px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-export const Heading = styled.div`
-  width: 100%;
-  height: 20px;
-  align-items: center;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  margin: 20px 10px;
+export const StyledInput = styled.input`
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc; /* Added border for visibility */
+  border-radius: 4px;
+  width: 200px; /* Adjust width as needed */
+`;
 
-  h1 {
-    font-family: "sans-serif";
-    font-size: 26px;
-    /* Add any additional styles you want for h1 */
+export const StyledButton = styled.button`
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #45a049;
   }
 `;
